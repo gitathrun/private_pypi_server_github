@@ -14,5 +14,5 @@ EXPOSE 8080
 
 # make sure the entrypoint.sh is +x
 ADD entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 CMD ["/entrypoint.sh"]
-
