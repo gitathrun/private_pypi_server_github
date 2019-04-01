@@ -61,3 +61,11 @@ i.e.
 pip install --trusted-host http://xxxxxxx.cloudapp.azure.com \
 http://xxxxxxx.cloudapp.azure.com:8889/packages/xxx_package_0.0.1-py3-none-any.whl 
 ```
+
+Use following cmd within docker container to check whether the entrypoint.sh is in proper permission
+
+```
+sudo docker run -it tftwdockerhub/private_pypi_server:latest sh
+```
+
+Notice: Alpine system does not recognise bash cmd in default.
