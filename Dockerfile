@@ -2,7 +2,8 @@ FROM alpine:3.7
 MAINTAINER Teng Fu <teng.fu@teleware.com>
 
 RUN apk update && \
-    apk add py-pip && \
+    apk --update-cache upgrade && \
+    apk -U add py-pip && \
     pip install --upgrade pip setuptools wheel && \
     mkdir -p /private_packages
 
